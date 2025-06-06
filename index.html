@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTIFOLIO RESPOSIVO</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/scripts_nav.js" defer></script>
+</head>
+
+<body>
+    <!--menu-->
+    <nav>
+        <div class="logo">
+            <h2 href="#menu">Danilo Gabriel</h2>
+        </div>
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+    <menu id="home">
+        <div class="home-description">
+            <h1>Oi, eu sou <span class="dourado">Danilo</span></h1>
+            <p>estudante de programação</p>
+            <p>Sou aluno de desenvolvimento de sistemas, focado em aprender tanto front-end quanto back-end. Este
+                portfólio reúne alguns dos projetos que tenho desenvolvido enquanto adquiro experiência nessas áreas,
+                utilizando diferentes tecnologias e práticas de programação.</p>
+        </div>
+        <div class="gif-background">
+            <img class="gif-zero" src="imagens/sticcker-katana-zero.gif" alt="Katana Zero Sticker" />
+        </div>
+
+
+    </menu>
+
+    <div id="sobre" class="container">
+        <div class="titles">
+            <h1>SOBRE</h1>
+            <p>Sobre mim</p>
+        </div>
+        <div class="conteudo">
+            <div id="bio">
+                Meu nome e <span>Danilo Gabriel dos Santos Santana</span> tenho 17 anos e atualmente estou cursando o
+                curso de desenvolvimento de sistemas do SENAI. Estou começando a minha carreira de programador, e nesse
+                site irei compartilhas os projetos que desenvolvi até agora utilizando <span id="js">JavaScript</span>,
+                <span id="css">CSS</span> e <span id="html">HTML</span>
+            </div>
+            <div><img class="perfil-foto" src="imagens/placeholder-picture.jpeg" alt=""></div>
+        </div>
+    </div>
+
+    <div id="habilidades" class="container">
+        <div class="titles">
+            <h1>HABILIDADES</h1>
+            <p>Minhas habilidades</p>
+        </div>
+        <div class="imagens-skills">
+            <div><img id="jsimg" src="imagens/JS.png" alt="JavaScript">
+                <h1>40%</h1>
+            </div>
+            <div><img src="imagens/CSS3.png" alt="Css3">
+                <h1>70%</h1>
+            </div>
+            <div><img src="imagens/HTML5.png" alt="Html5">
+                <h1>90%</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container">
+        <div class="titles">
+            <h1>PORTFOLIO</h1>
+            <p>Meus trabalhos</p>
+        </div>
+        <div class="grid-work">
+            <a href="https://danilo-gab.github.io/calculadora/">
+                <div><img src="imagens/calculadora.png" alt=""></div>
+            </a>
+            <a target="_blank" href="https://danilo-gab.github.io/Projeto-Pedagio/">
+                <div><img src="imagens/controle_pedagio.png" alt=""></div>
+            </a>
+            <a target="_blank" href="https://danilo-gab.github.io/sitetesteandroid/">
+                <div><img src="imagens/site_android.png" alt=""></div>
+            </a>
+            <a target="_blank" href="https://github.com/Danilo-gab/projetowebjs">
+                <div><img src="imagens/web_js.png" alt=""></div>
+            </a>
+        </div>
+    </div>
+
+    <div id="contato" class="container">
+        <div class="titles">
+            <h1>CONTATO</h1>
+            <p>Entre em contato</p>
+        </div>
+        <div class="conteudo-contato">
+            <div class="contatos-rapidos">
+                <div>
+                    <h3>Email:</h3>
+                    <p>danilo.g.santana@aluno.senai.br</p>
+                </div>
+                <a target="_blank" href="https://wa.me/5579996074477">
+                    <div>
+                        <h3>Whatsapp:</h3>
+                        <p>(79) 99607-4477</p>
+                    </div>
+                </a>
+            </div>
+
+            <form id="contatoForm">
+                <div>
+                    <label for="">Nome:</label>
+                    <input id="nome" type="text">
+                </div>
+
+                <div>
+                    <label for="">E-mail:</label>
+                    <input id="email" type="text">
+                </div>
+
+                <div>
+                    <label for="">Descrição:</label>
+                    <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>&copy; 2025 Danilo Gabriel</div>
+        <div class="footer-content">
+            <div>
+                <li><a href="#contato">Contato</a></li>
+            </div>
+            <div>
+                <li><a href="#sobre">Sobre</a></li>
+            </div>
+            <div>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("VTCJSIIaBWOZctp17"); // Substitua pelo seu PUBLIC KEY
+        })();
+
+        document.getElementById("contatoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var params = {
+                name: document.querySelector("#nome").value,
+                reply_to: document.querySelector("#email").value,
+                message: document.querySelector("#mensagem").value,
+            };
+
+            emailjs.send("service_efvjqle", "template_43s8j2a", params)
+                .then(function (response) {
+                    alert("Seu e-mail foi enviado com sucesso!");
+                }, function (error) {
+                    alert("Erro ao enviar: " + JSON.stringify(error));
+                });
+        });
+    </script>
+</body>
+
+</html>
